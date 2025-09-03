@@ -1,5 +1,6 @@
 // Backend API URL
-const API_URL = 'http://127.0.0.1:5000/api';
+const API_URL = 'https://onam2025backend.onrender.com/api';
+
 
 // Hardcoded admin credentials
 const ADMIN_CREDENTIALS = {
@@ -157,3 +158,4 @@ function logout() {
 }
 
 window.onload = loadGames;
+
