@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tournament Scoreboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+  <img src="frontend/backround2.jpg"alt="">
+    <!-- Header -->
+  <style>
+    h1 {
+      color: yellow; /* Named color */
+    }
+    h2{
+      color:yellow;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>അവഞ്ചേഴ്‌സ് ആർട്‌സ് ആൻഡ് സ്‌പോർട്‌സ് ക്ലബ്ബിൻ്റെ 11-ാം ഓണാഘോഷo
+
+  </h1>
+  <h2>ആരവം 2k25 ഓണക്കളികളുടെ മത്സര ഫലം</h2>
+ 
+
+    
+    <div id="team-scores"></div>
+
+    <h2>ഓണക്കളികൾ</h2>
+    <div id="games" class="games-grid"></div>
+    
+    <!-- Admin Login Section -->
+    <div id="login-section" class="login-section">
+      <h3>Admin Login</h3>
+      <input type="text" id="adminUsername" placeholder="Username">
+      <input type="password" id="adminPassword" placeholder="Password">
+      <button onclick="adminLogin()">Login</button>
+      <p id="login-error" class="error-msg">Invalid username or password</p>
+    </div>
+
+    <!-- Admin Panel Section -->
+    <div id="admin-panel" class="admin-panel" style="display:none;">
+      <div class="admin-header">
+        <h3>Admin Controls</h3>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </div>
+
+      <label for="gameSelect">Select Game:</label>
+      <select id="gameSelect"></select>
+
+      <label for="winnerSelect">Select Winner:</label>
+      <select id="winnerSelect"></select>
+
+      <button id="updateBtn" onclick="updateScore()">Update Winner</button>
+
+      <hr />
+
+      <h4>Change Team Names</h4>
+      <input type="text" id="teamAName" placeholder="Enter Team A Name" />
+      <input type="text" id="teamBName" placeholder="Enter Team B Name" />
+      <button onclick="updateTeamNames()">Update Team Names</button>
+
+      <hr />
+
+      <!-- Reset Scores Button -->
+      <h4>Reset Tournament</h4>
+      <button class="reset-btn" onclick="resetScores()">Reset All Scores</button>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
