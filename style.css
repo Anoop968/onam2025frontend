@@ -1,7 +1,7 @@
 /* General Body Styling */
 body {
   font-family: Arial, sans-serif;
-  background: url('backround2.jpg') no-repeat center center fixed;
+  background: url('backround3.jpg') no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   padding: 20px;
@@ -166,3 +166,4 @@ hr {
 .reset-btn:hover {
   background: #c0392b;
 }
+
